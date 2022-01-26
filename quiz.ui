@@ -69,7 +69,7 @@
        <number>6</number>
       </property>
       <item row="1" column="0">
-       <widget class="QPushButton" name="button1">
+       <widget class="QPushButton" name="button3">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
           <horstretch>0</horstretch>
@@ -87,7 +87,7 @@
        </widget>
       </item>
       <item row="0" column="0">
-       <widget class="QPushButton" name="button2">
+       <widget class="QPushButton" name="button1">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
           <horstretch>0</horstretch>
@@ -105,7 +105,7 @@
        </widget>
       </item>
       <item row="0" column="1">
-       <widget class="QPushButton" name="button3">
+       <widget class="QPushButton" name="button2">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
           <horstretch>0</horstretch>

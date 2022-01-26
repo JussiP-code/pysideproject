@@ -57,18 +57,26 @@ class Ui_MainWindow(object):
         self.gridLayout = QGridLayout()
         self.gridLayout.setSpacing(6)
         self.gridLayout.setObjectName(u"gridLayout")
-        self.button1 = QPushButton(self.centralwidget)
-        self.button1.setObjectName(u"button1")
+        self.button3 = QPushButton(self.centralwidget)
+        self.button3.setObjectName(u"button3")
         sizePolicy1 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.MinimumExpanding)
         sizePolicy1.setHorizontalStretch(0)
         sizePolicy1.setVerticalStretch(0)
-        sizePolicy1.setHeightForWidth(self.button1.sizePolicy().hasHeightForWidth())
-        self.button1.setSizePolicy(sizePolicy1)
+        sizePolicy1.setHeightForWidth(self.button3.sizePolicy().hasHeightForWidth())
+        self.button3.setSizePolicy(sizePolicy1)
         font1 = QFont()
         font1.setPointSize(12)
+        self.button3.setFont(font1)
+
+        self.gridLayout.addWidget(self.button3, 1, 0, 1, 1)
+
+        self.button1 = QPushButton(self.centralwidget)
+        self.button1.setObjectName(u"button1")
+        sizePolicy1.setHeightForWidth(self.button1.sizePolicy().hasHeightForWidth())
+        self.button1.setSizePolicy(sizePolicy1)
         self.button1.setFont(font1)
 
-        self.gridLayout.addWidget(self.button1, 1, 0, 1, 1)
+        self.gridLayout.addWidget(self.button1, 0, 0, 1, 1)
 
         self.button2 = QPushButton(self.centralwidget)
         self.button2.setObjectName(u"button2")
@@ -76,15 +84,7 @@ class Ui_MainWindow(object):
         self.button2.setSizePolicy(sizePolicy1)
         self.button2.setFont(font1)
 
-        self.gridLayout.addWidget(self.button2, 0, 0, 1, 1)
-
-        self.button3 = QPushButton(self.centralwidget)
-        self.button3.setObjectName(u"button3")
-        sizePolicy1.setHeightForWidth(self.button3.sizePolicy().hasHeightForWidth())
-        self.button3.setSizePolicy(sizePolicy1)
-        self.button3.setFont(font1)
-
-        self.gridLayout.addWidget(self.button3, 0, 1, 1, 1)
+        self.gridLayout.addWidget(self.button2, 0, 1, 1, 1)
 
         self.button4 = QPushButton(self.centralwidget)
         self.button4.setObjectName(u"button4")
@@ -114,9 +114,9 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>Kysymys</p></body></html>", None))
-        self.button1.setText(QCoreApplication.translate("MainWindow", u"C", None))
-        self.button2.setText(QCoreApplication.translate("MainWindow", u"A", None))
-        self.button3.setText(QCoreApplication.translate("MainWindow", u"B", None))
+        self.button3.setText(QCoreApplication.translate("MainWindow", u"C", None))
+        self.button1.setText(QCoreApplication.translate("MainWindow", u"A", None))
+        self.button2.setText(QCoreApplication.translate("MainWindow", u"B", None))
         self.button4.setText(QCoreApplication.translate("MainWindow", u"D", None))
     # retranslateUi
 
