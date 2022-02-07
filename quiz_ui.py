@@ -51,6 +51,11 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout.addItem(self.horizontalSpacer_2)
 
+        self.label_nro = QLabel(self.centralwidget)
+        self.label_nro.setObjectName(u"label_nro")
+
+        self.horizontalLayout.addWidget(self.label_nro)
+
 
         self.verticalLayout.addLayout(self.horizontalLayout)
 
@@ -114,6 +119,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>Kysymys</p></body></html>", None))
+        self.label_nro.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.button3.setText(QCoreApplication.translate("MainWindow", u"C", None))
         self.button1.setText(QCoreApplication.translate("MainWindow", u"A", None))
         self.button2.setText(QCoreApplication.translate("MainWindow", u"B", None))
