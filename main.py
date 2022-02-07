@@ -1,4 +1,5 @@
 import sys
+import time
 import PySide6
 
 from PySide6.QtWidgets import QApplication, QMainWindow, QMessageBox
@@ -53,7 +54,24 @@ class MainWindow(QMainWindow):
 		
 		if int(painettu) == self.oikea_vastaus:
 			print("Oikein!")
+			painettu_nappi = self.sender()
+			painettu_nappi.setStyleSheet("""
+				QPushButton {background:rgb(0,255,0)}
+			""")
+			QApplication.processEvents()
+			time.sleep(1)
+			painettu_nappi.setStyleSheet("")
 			self.pisteet += 1
+		
+		else:
+			print("Väärin...")
+			painettu_nappi = self.sender()
+			painettu_nappi.setStyleSheet("""
+				QPushButton {background:rgb(255,0,0)}
+			""")
+			QApplication.processEvents()
+			time.sleep(1)
+			painettu_nappi.setStyleSheet("")
 
 		self.indeksi += 1
 		if self.indeksi >= len(self.tiedot):
